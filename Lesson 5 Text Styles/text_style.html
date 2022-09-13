@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+
+</head>
+<body>
+    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+    <p class="video-title info">3.4M views · 6 months ago</p>
+    
+    <p class="video-author">Marques Brownlee &#10003;</p>
+
+    <p class="video-content">In this full course, we learn how to build websites with HTML and CSS, and get started as a software engineer.</p>
+    
+    <p class="apple-text">Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now &#62;</span></p>
+    
+    <script>
+        let app = Vue.createApp({
+            data: function(){
+                return {
+                    people:[
+                        {
+                            name : "人物1",
+                            age : '2',
+                            gender : 'male'
+                        },
+                        {
+                            name : "人物2",
+                            age : '3',
+                            gender : 'female'
+                        },
+                    ]
+                }
+            },
+            methods:{
+
+            },
+            mounted: function() {
+
+            }
+        }).mount("#container");
+    </script>
+</body>
+</html>
