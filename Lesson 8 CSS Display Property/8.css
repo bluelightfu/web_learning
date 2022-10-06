@@ -1,0 +1,31 @@
+.input{
+    display: block;
+    margin-bottom: 4px;
+    width: 150px;
+    font-size: 16px;
+}
+.text{
+    display: inline-block;
+    font-size: 18px;
+    width: 220px;
+    vertical-align: middle;
+}
+.input-search{
+    width: 400px;
+    height: 10px;
+    text-indent: 4px;
+    border-radius: 26px;
+    border-color: #C5C4C5;
+    border-style: solid;
+    border:0px;
+    box-shadow: 0px 0px 4px 1px #dddddd;
+    font-size: 12px;
+    padding: 8px;
+    display: block;
+}
+.g-img{
+    width: 200px;
+    margin-left: 110px;
+    margin-bottom: 8px;
+    display: block;
+}
