@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 7 Exercises</title>
     <style>
+        li{
+            margin-top: 10px;
+        }
+
         .round{
             border-radius: 16px;
             width: 200px;
-            margin-top: 8px;
         }
         .square{
             width: 200px;
             height: 200px;
             object-fit: cover;
             object-position: center;
-            margin-top: 8px;
         }
         .circle{
             width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 100px;
-            margin-top: 8px;
         }
         .round-corner-input{
             width: 150px;
@@ -33,7 +34,6 @@
             border-style: solid;
             font-size: 12px;
             padding: 8px;
-            margin-top: 8px;
         }
         .round-input{
             width: 400px;
@@ -46,7 +46,53 @@
             box-shadow: 0px 0px 4px 1px #dddddd;
             font-size: 12px;
             padding: 8px;
-            margin-top: 8px;
+        }
+        .title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #585758;
+        }
+        .square-input{
+            border: 2px solid rgb(100, 100, 100);
+            width: 400px;
+            border-radius: 2px;
+            font-size: 16px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        .linkedin{
+            border-radius: 20px;
+            border:0px;
+            color: #fff;
+            background-color: #2858A7;
+            padding: 8px 64px;
+        }
+        .twitter{
+            vertical-align: middle;
+            color: #585758;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .small{
+            height: 40px;
+            width: 40px;
+            vertical-align: middle;
+        }
+        .twitter-input{
+            vertical-align: middle;
+            border:none;
+            text-indent: 2px;
+            font-size: 18ox;
+            width: 300px;
+            outline: none;
+        }
+        .twitter-btn{
+            border-radius: 20px;
+            border:none;
+            color: #fff;
+            background-color: #4A99E8;
+            padding: 8px 16px;
+            font-weight: bold;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -62,6 +108,15 @@
     <input type="text" placeholder="Search" class="round-corner-input">
     <li>7e</li>
     <input type="text" placeholder="Search Google or type a URL" class="round-input">
+    <li>7f</li>
+    <p class="title" style="margin-bottom: 4px;">Email</p>
+    <input type="text" class="square-input">
+    <p class="title">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+    <button class="linkedin">Agree & Join</button>
+    <li>7g</li>
+    <img class="circle small" src="cat.png">
+    <input type="text" placeholder="What's happening?" class="twitter-input">
+    <button class="twitter-btn">Tweet</button>
 </ul>    
 </body>
 </html>
