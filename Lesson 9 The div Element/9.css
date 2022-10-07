@@ -1,0 +1,105 @@
+.square{
+    width: 100px;
+    height: 100px;
+}
+.red{
+    background-color: red;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+}
+.green{
+    background-color: green;
+}
+.yt-background{
+    background-color: #1e1d1f;
+}
+li{
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.box{
+    width: 360px;
+    border: 1px solid #C6C5C6;
+    padding: 20px 15px;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+
+}
+.yt-title{
+    color: white;
+    font-size: 24px;
+}
+.yt-comment{
+    color: #767576;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.border{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 8px 12px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+.twitter-input{
+    vertical-align: middle;
+    border:none;
+    text-indent: 2px;
+    font-size: 18ox;
+    width: 300px;
+    outline: none;
+}
+.twitter-btn{
+    border-radius: 20px;
+    border:none;
+    color: #fff;
+    background-color: #4A99E8;
+    padding: 8px 16px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+.card{
+    display: inline-block;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.card-name{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 8px 0px 0px 8px;
+}
+.card-info{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-top: 4px;
+    font-size: 8px;
+    color:#757375;
+}
+.card-btn{
+    border: 0px;
+    background-color: #2F5FBE;
+    border-radius: 4px;
+    color: white;
+    margin: 4px 8px 8px 8px;
+    padding: 8px 18px;
+}
