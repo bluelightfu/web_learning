@@ -103,3 +103,27 @@ li{
     margin: 4px 8px 8px 8px;
     padding: 8px 18px;
 }
+.input-search{
+    width: 500px;
+    height: 10px;
+    text-indent: 4px;
+    border-radius: 26px;
+    border-color: #C5C4C5;
+    border-style: solid;
+    border:0px;
+    box-shadow: 0px 0px 4px 1px #dddddd;
+    font-size: 16px;
+    padding: 12px;
+}
+.g-img{
+    width: 200px;
+    margin-bottom: 4px;
+}
+.g-btn{
+    margin-top: 26px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding:12px 20px;
+    font-size: 16px;
+}
