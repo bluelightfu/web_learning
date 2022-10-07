@@ -19,8 +19,8 @@
     border-style: solid;
     border:0px;
     box-shadow: 0px 0px 4px 1px #dddddd;
-    font-size: 12px;
-    padding: 8px;
+    font-size: 16px;
+    padding: 12px;
     display: block;
 }
 .g-img{
@@ -28,4 +28,59 @@
     margin-left: 110px;
     margin-bottom: 8px;
     display: block;
+}
+.sign-up{
+    width: 100px;
+    border-radius: 6px;
+    font-size: 12px;
+    padding:8px;
+    text-indent: 4px;
+    border : 2px solid #C5C4C5;
+    display: inline-block;
+}
+.email{
+    display: block;
+    width:224px;
+    margin-top: 8px;
+}
+.submit{
+    display: block;
+    width:244px;
+    margin-top: 8px;
+    background-color: #4A99E8;
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.title{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.input {
+    display:block;
+    border: 0px;
+    background-color: #F1EFF1;
+    padding: 8px;
+    text-indent: 4px;
+    width: 280px;
+    font-size: 12px;
+}
+.uber{
+    padding: 12px 18px;
+    border: 0px;
+    margin-top: 18px;
+}
+.request{
+    background-color: #000;
+    color:#fff;
+}
+.later{
+    margin-left: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
