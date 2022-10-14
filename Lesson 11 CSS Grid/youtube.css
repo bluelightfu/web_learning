@@ -1,0 +1,53 @@
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+}
+
+.video-preview , .thumbnail-preview{
+    width: 400px;
+}
+.thumbnail-preview{
+    width: 400px;
+}
+.thumbnail{
+    width: 100%;
+}
+.video-information{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 8px;
+    width: 400px;
+}
+.channel-col{
+    vertical-align: top;
+    width: 40px;
+}
+.channel-img{
+    border-radius: 50px;
+    width: 100%;
+}
+.video-profile{
+    margin-left: 6px;
+}
+.video-name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.channel-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.video-view{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
