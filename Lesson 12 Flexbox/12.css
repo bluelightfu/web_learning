@@ -1,0 +1,155 @@
+.blue{
+    background-color: lightblue;
+}
+.pink{
+    background-color: lightpink;
+}
+.a{
+    display: flex;
+    flex-direction:row;
+}
+.a1{
+    width: 200px;
+}
+.a2{
+    width: 75px;
+}
+.b{
+    display: flex;
+    flex-direction: row;
+}
+.b1{
+    width: 50px;
+}
+.b2{
+    flex: 1;
+}
+.b3{
+    width: 75px;
+}
+.c{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.d{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #BAB9BA;
+    height: 50px;
+}
+.e{
+    border: 2px solid #BAB9BA;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    width: 350px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.notification{
+    color: white;
+    background-color: #426CEE;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.f{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px ;
+    background-color: #624795;
+}
+.white-f{
+    color: white;
+}
+.searchbox{
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    width: 350px;
+}
+.searchbox::placeholder{
+    font-weight: bold;
+    color: #656565;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.download-btn{
+    border: 1px solid white;
+    background-color: #624795;
+    padding: 8px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+}
+.containter{
+    display: flex;
+    flex-direction: column;
+}
+.g{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.photo{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+.profile .name{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.profile .status{
+    color:#9E9C9E;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.profile .popularity{
+    color:#9E9C9E;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.follow-btn{
+    border-radius: 4px;
+    border: none;
+    background-color: #4193F1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 60px;
+    padding: 8px 10px;
+}
