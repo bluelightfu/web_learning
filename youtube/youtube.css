@@ -51,3 +51,24 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 55px;
+    margin:0;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger-menu{
+    height: 20px;
+    margin-left: 22px;
+    margin-right:22px;
+}
+.youtube-icon{
+    height:20px
+}
