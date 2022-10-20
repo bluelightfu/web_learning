@@ -31,7 +31,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.c{
+.c,.d{
     display: flex;
     flex-direction: column;
     border:none;
@@ -43,15 +43,20 @@
     font-family: Roboto;
     color:gray;
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 8px;
 }
 .inboxes{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .mail{
     display: flex;
     flex-direction: row;
+    margin-top: 16px;
+    justify-content: center;
+
 }
 .img{
     width: 40px;
@@ -98,3 +103,93 @@
     margin-bottom: 0px;
     color: rgb(160 , 160, 160);
 }
+.content-2{
+    display: block;
+    margin-left:8px;
+}
+.d-2{
+    display: block;
+    border:none;
+    box-shadow: 0px 0px 4px rgb(192, 192, 192);
+    width: 310px;
+    padding:8px 8px;
+}
+.e{
+    display: block;
+    border:none;
+    box-shadow: 0px 0px 4px rgb(192, 192, 192);
+    width: 310px;
+    padding:8px 8px;
+}
+.g{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+.twitter-img{
+    width: 50px;
+    height: 50px;
+}
+.twitter-msg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.account{
+    display: flex;
+    display: row;
+    margin-bottom: 5px;
+}
+.twitter-content{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.video{
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 16px;
+}
+.video-img{
+    background-color:rgb(192, 192, 192);
+    width: 90px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.video-detail{
+    display: flex;
+    flex-direction: column; 
+    flex:1;
+    padding: 16px 12px;
+
+}
+.video-url{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(95, 95, 95);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.video-name{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.msg{
+    margin-bottom: 12px;
+}
+.account-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.account-tag{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
