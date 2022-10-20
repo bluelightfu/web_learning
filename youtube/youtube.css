@@ -7,6 +7,7 @@ p{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 8px;
     row-gap: 16px;
+    align-items: flex-start;
 }
 
 .video-preview , .thumbnail-preview{
@@ -52,11 +53,16 @@ p{
     font-size: 14px;
 }
 .header{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     height: 55px;
     margin:0;
+    position: fixed;
+    left:0;
+    top: 0;
+    right:0;
 }
 .left-section{
     display: flex;
