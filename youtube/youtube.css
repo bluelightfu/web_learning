@@ -13,8 +13,13 @@ p{
 .video-preview , .thumbnail-preview{
     width: 400px;
 }
+.video-preview{
+    margin-left: auto;
+    margin-right: auto ;
+}
 .thumbnail-preview{
     width: 400px;
+    position: relative;
 }
 .thumbnail{
     width: 100%;
@@ -52,6 +57,19 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+.video-time{
+    background:black;
+    color: white;
+    position: absolute;
+    bottom:12px;
+    right:5px;
+    font-size: 12px;
+    padding: 4px 4px;
+    font-family: Roboto,Arial;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
 .header{
     background-color: white;
     display: flex;
@@ -63,7 +81,23 @@ p{
     left:0;
     top: 0;
     right:0;
+    border-bottom: 1px solid rgb(192,192,192);
+    z-index: 100;
 }
+
+.sidebar{
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 100;
+}
+.sidebar .menu{
+}
+
 .left-section{
     display: flex;
     align-items: center;
@@ -147,4 +181,15 @@ p{
     width: 32px;
     height: 32px;
     border-radius: 16px;
+}
+.notification-number{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    position: absolute;
+    right: -8px;
+    top: -5px;
+    padding: 2px 5px;
+    font-size: 11px;
 }
