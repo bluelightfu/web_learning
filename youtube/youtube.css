@@ -87,15 +87,30 @@ p{
 
 .sidebar{
     position: fixed;
-    display: flex;
     left: 0;
     bottom: 0;
     top: 55px;
     background-color: white;
     width: 72px;
-    z-index: 100;
 }
-.sidebar .menu{
+.sidebar-link{
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-link:hover{
+    background-color: lightgray;
+}
+
+.sidebar-link img{
+    height: 24px;
+}
+
+.sidebar-link div{
+    font-family: Arial;
+    font-size: 10px;
 }
 
 .left-section{
