@@ -1,0 +1,21 @@
+.container{
+    display: inline-block;
+    position: relative;
+}
+.clothes{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.tag{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    background-color: black;
+    color:white;
+    font-size: 12px;
+    width: 60px;
+    font-family: Arial;
+    padding: 8px 12px;
+    text-align: center;
+}
