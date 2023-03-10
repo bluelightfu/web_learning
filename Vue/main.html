@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Practice</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body >
+    <style>
+        .err{
+            border:solid 4px red;
+        }
+    </style>
+
+    <div id="app"  >貨幣轉換
+        <div>台幣<input type="text" v-model="twd" placeholder="TWD"></div>
+        <div>日幣<input type="text" v-model="jpy" placeholder="JPY"></div>
+        <textarea v-model="content" placeholder="add lines" :style="styleFunc"></textarea>
+        <div>
+            <input type="checkbox" :id="jack" value="Jack" v-model="pickedName" >
+            <label for="jack">Jack</label>
+
+            <input type="checkbox" :id="may" value="May" v-model="pickedName">
+            <label for="may">May</label>
+
+            <input type="checkbox" :id="mike" value="Mike" v-model="pickedName">
+            <label for="mike">Mike</label>
+            <p>{{pickedName}} say {{content}}</p>
+        </div>
+        
+        <ul>
+            <p>Todo</p>
+            <li v-for="item in todoLists" :key="item.id">
+                <label><input type="checkbox" v-model="item.isDone">{{item.title}}</label>
+            </li>
+            <p>Finish</p>
+            <li v-for="item in doneLists" :key="item.id">
+                <label><input type="checkbox" v-model="item.isDone">{{item.title}}</label>
+            </li>
+        </ul>
+        <template v-if="ok">
+            <h1>Title</h1>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+         </template>
+        <p v-show="ok">is ok</p>
+    </div>
+
+    <script>
+        const vm = Vue.createApp({
+            data(){
+                return{
+                    twd: 0.222,
+                    pickedName:[],
+                    content:'',
+                    count:0,
+                    ok:false,
+                    lists:[
+                        {
+                            id:"task001",
+                            title: "Option1",
+                            isDone: false
+                        },
+                        {
+                            id:"task002",
+                            title: "Option2",
+                            isDone: false
+                        },
+                        {
+                            id:"task003",
+                            title: "Option3",
+                            isDone: false
+                        },
+                        {
+                            id:"task004",
+                            title: "Option4",
+                            isDone: false
+                        }
+                    ]
+                }
+            },
+            computed:{
+                jpy:{
+                    get(){
+                        console.log("get")
+                        return Number.parseFloat(Number(this.twd)/0.222).toFixed(3);
+                    },
+                    set(val){
+                        console.log("set")
+                        this.twd = Number.parseFloat(Number(val)*0.222).toFixed(3);
+                    }
+                },
+                styleFunc:function(){
+                    if(this.content.length >= 10){
+                        return {
+                            'border' : 'solid 2px red',
+                            'color' : 'red'
+                        }
+                    }else{
+                        return {
+                            'color' : "blue"
+                        }
+                    }
+                },
+                todoLists:function(){
+                    return this.lists.filter(item => item.isDone === false);
+                },
+                doneLists:function(){
+                    return this.lists.filter(item => item.isDone === true);
+                }
+            },
+            methods:{
+                total : function(){
+                    return this.price * this.amount;
+                },
+                countInfo : function(){
+                    if(this.count>1) return this.count+" times.";
+                    else return this.count + " time.";
+                },
+                plus : function(event){
+                    console.log(event.target);
+                    this.count++;
+                },
+                alert : function(msg){
+                    alert(msg);
+                },
+                getTemplate : function(){
+                    var template = document.getElementsByTagName("template")[0];
+                    console.log(template)
+                    var clone = template.content.cloneNode(true);
+                    console.log(clone)
+                    document.getElementById('app').appendChild(clone);
+                }
+            }
+        }).mount("#app");
+    </script>
+
+</body>
+</html>
